@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap.css">
+  <title>Atividade 1 Computação Gráfica</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<meta charset="utf-8">
+	<script src='https://cdn.plot.ly/plotly-2.3.1.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+	<div class="alert alert-dismissible alert-warning">
+		<button type="button" class="btn-close" data-bs-dismiss="alert alert-dismissible alert-warning"></button>
+		<h4 class="alert-heading">Aviso!</h4>
+		<p class="mb-0">Caso esteja aparecendo apenas o gráfico dos indicadores da vacinação percentual, talvel o PC esteja sem internet e não conseguiu conectar com o arquivo .csv 
+			hospedado no github. Por favor verifique a conexão ou tente o acesso por esse link:
+			 <a href="https://aerodesign.univasf.edu.br/trab/index.html"> https://aerodesign.univasf.edu.br/trab/index.html</a>.</p>
+	  </div>
+
+
+
+	<div class="container p-3 my-3 bg-dark text-white">
+
+	<h2>Atividade 1 Computação Gráfica</h2>
+
+	<h4>
+		Dashboard  simples com dados da COVID-19
+		<small class="text-muted">nas cidades de Juazeiro e Petrolina</small>
+	  </h4>
+
+	<h5> Aluno: Victor Augusto Medeiros Balbino</h5>
+
+	<h6> É preciso descompactar a pasta para a página ser vista corretamente.</h6>
+	
+	
+	</div>
+
+	
+
+
+	<div class="container-sm border">
+		<div id='myDiv2'><!-- Plotly chart will be drawn inside this DIV --></div>
+	</div>
+
+	<div class="container-sm border">
+		<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+	</div>
+
+	<div class="container-sm border">
+		<div id='myDiv3'><!-- Plotly chart will be drawn inside this DIV --></div>
+	</div>
+
+	<div class="container p-3 my-3 border">
+		<h1>Fontes:</h1>
+		<p>Os dados foram obtidos a partir de bancos púlicos disponíveis na internet </p>
+		<p>brasil.io/dataset/covid19/</p>
+		<p>https://bi.saude.ba.gov.br/vacinacao/</p>
+		<p>https://www.pecontracoronavirus.pe.gov.br/</p>
+		<p>https://www6.juazeiro.ba.gov.br/category/coronavirus/</p>
+
+	  </div>
+
+
+
+
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <script  src="./script2.js"></script>
+  <script  src="./script3.js"></script>
+
+
+</body>
+</html>

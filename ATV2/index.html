@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap.css">
+  <title>Atividade 2 Computação Gráfica</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.3.1.min.js'></script>
+</head>
+
+<body>
+
+
+  
+	<div class="container p-3 my-3 bg-dark text-white">
+
+    <h2>Atividade 2 Computação Gráfica</h2>
+  
+    <h4>
+      Geradores de retas e círculos
+      
+      </h4>
+  
+    <h5> Aluno: Victor Augusto Medeiros Balbino</h5>
+  
+    <h6> É preciso descompactar a pasta para a página ser vista corretamente.</h6>
+    
+    
+    </div>
+
+    <div class="container-sm border">
+      <h4> Retas</h4>
+      <div class="row">
+        <div class="col"><div class="form-group">
+          <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Coordenada X0</label>
+          <input class="form-control form-control-sm" type="text" placeholder="X0" id="x0">
+        </div>
+        </div>
+        <div class="col"><div class="form-group">
+          <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Coordenada Y0</label>
+          <input class="form-control form-control-sm" type="text" placeholder="Y0" id="y0">
+        </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col"><div class="form-group">
+          <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Coordenada X1</label>
+          <input class="form-control form-control-sm" type="text" placeholder="X1" id="x1">
+        </div>
+        </div>
+        <div class="col"><div class="form-group">
+          <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Coordenada Y1</label>
+          <input class="form-control form-control-sm" type="text" placeholder="Y1" id="y1">
+        </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container-sm border">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            
+          </div>
+
+          <div class="col-sm">
+            <button onclick="pegaValor()" type="button" class="btn btn-primary">Enviar valores</button>
+            <button onclick="clicou1()" type="button" class="btn btn-primary" style="text-align:right">Algoritmo DDA</button>
+            <button onclick="clicou2()" type="button" class="btn btn-primary" style="text-align:right">Algoritmo Bresenham</button>
+            <button onclick="limparTela()" type="button" class="btn btn-dark">Limpar tela</button>
+
+          </div>
+          
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+
+
+    <div class="container-sm border">
+      <h4> Círculos</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label class="col-form-label mt-4" for="inputDefault">Coordenada X0</label>
+              <input type="text" class="form-control" placeholder="x0" id="x00">
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label class="col-form-label mt-4" for="inputDefault">Coordenada Y0</label>
+              <input type="text" class="form-control" placeholder="y0" id="y00">
+            </div>          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label class="col-form-label mt-4" for="inputDefault">Raio</label>
+              <input type="text" class="form-control" placeholder="raio" id="raio">
+            </div>          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm border">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            
+          </div>
+
+          <div class="col-sm">
+            <button onclick="pegaValorNova()" type="button" class="btn btn-primary">Enviar valores</button>
+            <button onclick="clicou4()" type="button" class="btn btn-primary" style="text-align:right">Círculo Simples</button>
+            <button onclick="clicou3()" type="button" class="btn btn-primary" style="text-align:right">Algoritmo Ponto Médio</button>
+            <button onclick="limparTela()" type="button" class="btn btn-dark">Limpar tela</button>
+
+          </div>
+          
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+
+
+    <div class="container-sm border">
+      
+      <h4> Tela de visualização(500x300)</h4>
+    <canvas width=500 height=300></canvas>
+
+
+
+    </div>
+
+
+
+
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
